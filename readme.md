@@ -43,7 +43,7 @@ Contains the input data for the simulation:
 
 ### Class: Unicycle
 * Methods:
-    * `__init__(self, state0)`: Initializes the unicycle class with the initial state.
+    * `__init__(self, state0)`: Initializes an instance of the unicycle class with the initial state.
     * `update(self, v, w)`: Updates the unicycle's state based on the velocity (`v`) and turn rate (`w`).
 
 ## Control
@@ -52,7 +52,7 @@ Contains the input data for the simulation:
 
 ### Class: Control
 * Methods:
-    * `__init__(self, mode, state_ref, state_tr)`: Initializes the control class with the control mode, reference state, and tracker state.
+    * `__init__(self, mode, state_ref, state_tr)`: Initializes an instance of the control class with the control mode, reference state, and tracker state.
     * `initialize_pid(self, error_t0)`: Initializes the PID control variables with the initial error.
     * `error(self, state_ref, state_tr)`: Calculates the error between the reference and tracker states.
     * `lyapunov_control(self, error, refV, refW)`: Computes the control signal using Lyapunov control.

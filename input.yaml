@@ -1,0 +1,10 @@
+# Initial state of reference robot [X, Y, theta]
+ref_state : [0,  3, 0.78]
+# Initial state of tracker robot [X, Y, theta]
+tr_state  : [10, 0, 0]
+# Constant controls of reference robot
+v_ref     : 5
+w_ref     : .1
+# Control method to be used: 0: Linear, 1: Lyapunov, 2: PID; Combinations of 2 allowed 
+control   : 2 # PID
+#control   : [2,0] # PID then linear
